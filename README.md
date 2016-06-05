@@ -13,3 +13,7 @@ Klona ner projektet till din www-mapp:
 Ställ dig sedan i projektmappen och installera dependencies:
 
 * composer update no --dev
+
+## Demo
+http://www.student.bth.se/~maem14/Javascript/projekt/index.htm
+Take a look att the demonstraion page above.
