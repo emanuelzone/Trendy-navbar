@@ -8,7 +8,7 @@ This page was created by Martin Emanuelsson for project work in the course JavaS
 
 Klona ner projektet till din www-mapp:
 
-* git clone https://github.com/emanulzone/audiobox.git
+* git clone https://github.com/emanuelzone/Trendy-navbar.git
 
 Ställ dig sedan i projektmappen och installera dependencies:
 
