@@ -1,0 +1,462 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="description" content="Creativity, portfolio & Webdevelopement">
+<meta name="keywords" content="Martin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Creativity, portfolio & Webdevelopement</title>
+
+<!-- Style for theme -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<!-- Content -->
+
+<body>
+
+
+<!-- Settings -->
+<div class="settings-wrapper">
+<div class="col-md-12 settings-close"><a href="#load"><i class="fa fa-close"></i> Close</a></div>
+<div class="col-md-12">
+<h3>Color</h3>
+<p>Here you can change the color of the theme.</p>
+<a id="blue" href="#color"><span class="colors blue"></span></a>
+<a id="black" href="#color"><span class="colors black"></span></a>
+<a id="grey" href="#color"><span class="colors grey"></span></a>
+</div>
+
+<div class="col-md-12">
+<h3>Font</h3>
+<p>Here you can change the main theme font.</p>
+<ul>
+<li><a id="dosis" href="#font">Verdana</a></li>
+<li><a id="arial" href="#font">Arial</a></li>
+<li><a id="montserrat" href="#font">Montserrat (Theme font)</a></li>
+</ul>
+</div>
+</div>
+<div class="settings"><a href="#load"><i class="fa fa-cogs"></i></a></div>
+<!-- END Settings -->
+
+<!-- BOX -->
+<div class="container space top-content">
+
+<div class="row">
+<div class="col-md-12">
+<span class="logo intro"><img class="logo" src="img/logo_footer.png" /></span>
+<h1 class="intro-heading">Creativity, portfolio &</br><b>Webdevelopement</b></h1>
+<p class="intro-text">This page was created by Martin Emanuelsson for project work in the course JavaScript at Blekinge Institute of Technology. <br/>The page is encoded using JavaScript and contains various scripts for general use.</p>
+</div>
+</div>
+
+<div class="row intro-menu">
+<div class="col-md-12"><a class="menu" href="#menu"><i class="fa fa-bars"></i></a></div>
+<div class="col-md-12"><a class="menu-hide" href="#menu"><i class="fa fa-close"></i></a></div>
+
+<div class="col-md-12 boxes">
+<a class="bmk box1 box" id="1" href="#start"><i class="fa fa-home"></i><br>Start</a>
+<a class="bmk box2 box" id="2" href="#information"><i class="fa fa-male"></i><br>Who Is?</a>
+<a class="bmk box3 box" id="3" href="#skills"><i class="fa fa-cubes"></i><br>Skills</a>
+<a class="bmk box4 box" id="4" href="#plugins"><i class="fa fa-download"></i></br>Plugins</a>
+<a class="bmk box5 box" id="5" href="https://jsfiddle.net/user/emanuelzone/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i><br>Jsfiddle</a>
+<a class="bmk box6 box" id="6" href="https://github.com/emanuelzone" target="_blank"><i class="fa fa-github"></i><br>Github</a>
+<a class="bmk box7 box" id="7" href="#"><i class="fa fa-comment-o"></i><br>Contact</a>
+</div>
+<div class="col-md-12"><span class="infotext"></span></div>
+
+</div>
+</div>
+<!-- END BOX -->
+
+<div class="img-person"><p class="text-center"><img class="img-responsive img-circle" src="img/martin_circle.png" width="200" alt="Martin"></p></div>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1 class="text-center">A portfolio navbar with skillbars</h1>
+<p class="sub-headline">By: Martin emanuelsson</p>
+<h3>Om pluginet</h3>
+<p>Trender kommer och trender går. Men en jQuery meny är allt du får. En trend som är populär just nu är snygga menyer som beter sig normalt tills vi rullar eller klickar på något på sajten. Snygga och funktionella navigeringsmetoder har verkligen vuxit i popularitet dom senaste åren och gör sidan mer dynamisk och populär bland besökarna.</p>
+<p>I den här guiden kommer vi att skapa en meny som man klickar fram via en funktion i jQuery, men så att det inte stör innehållet eller tar upp för mycket plats.</p>
+<p>Till min hjälp använder jag mig utav <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> och <a href="http://fontawesome.io" target="_blank">Font Awesome</a> som du bör installera för att det ska fungera korrekt.</p>
+<p>På toppen av den här sidan finner du menyn så du kan du få ett exempel på hur det kan komma och se ut när vi är klara.</p>
+<p>Om du inte vill hänga med i guiden kan du ladda ner filen direkt nedan.</p>
+<p><a class="btn-dl" href="#"><i class="fa fa-github"></i> Github</a> <a class="btn-dl" href="#"><i class="fa fa-download"></i> ladda ner</a></p>
+
+<div class="col-md-12 spacer"></div>
+
+<h3>Inledning</h3>
+<p>Först laddar vi ner <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> och <a href="http://fontawesome.io" target="_blank">Font Awesome</a> och implementerar det i sidhuvudet.</p>
+
+<h3>HTML</h3>
+<p>HTML koden för vårt exempel är relativt enkel, allt vi behöver är en klass samt ett unikt id per länk för för alla a objekten i menyn.</p>
+<xmp>
+<a class="box" id="1" href="#"><i class="fa fa-home"></i><br>Start</a>
+<a class="box" id="2" href="#"><i class="fa fa-male"></i><br>Who Is?</a>
+<a class="box" id="3" href="#"><i class="fa fa-cubes"></i><br>Skills</a>
+<a class="box" id="4" href="#"><i class="fa fa-download"></i><br>Plugins</a>
+<a class="box" id="5" href="https://jsfiddle.net/user/emanuelzone/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i>/br>Jsfiddle</a>
+<a class="box" id="6" href="https://github.com/emanuelzone" target="_blank"><i class="fa fa-github"></i><br>Github</a>
+<a class="box" id="7" href="#"><i class="fa fa-comment-o"></i><br>Contact</a>
+</xmp>
+
+<h3>CSS</h3>
+<p>Vår CSS används för att styla olika tillstånd och att övergången mellan de båda staterna. Till att börja med, låt oss lägga till några enkla stilar som förbättrar utseendet för knappen. Jag använder mig utav "transitions" för att få en mjuk övergång.</p>
+<xmp>
+.box {
+  opacity: 0;
+  margin-right: 2px;
+  margin-bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  vertical-align: bottom;
+  padding-top: 16px;
+  margin-bottom: 2px;
+  text-align: center;
+  display: inline-block;
+  width: 84px;
+  height: 80px;
+  border-bottom: 1px solid transparent;
+}
+
+.box {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.box i {
+  font-size: 2.2em;
+}
+
+.box:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #32b3ea;
+}
+
+.box {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.box:hover i {
+  text-shadow: #CCC 0px 0px 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.box i {
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  color: #CCC;
+}
+
+.box:hover i {
+  color: #FFF;
+}
+
+</xmp>
+
+<h3>Resultat</h3>
+<a class="box-test" id="1" href="#"><i class="fa fa-home"></i><br>Start</a>
+<a class="box-test" id="2" href="#"><i class="fa fa-male"></i><br>Who Is?</a>
+<a class="box-test" id="3" href="#"><i class="fa fa-cubes"></i><br>Skills</a>
+<a class="box-test" id="4" href="#"><i class="fa fa-download"></i><br>Plugins</a>
+<a class="box-test" id="5" href="https://jsfiddle.net/user/emanuelzone/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i><br>Jsfiddle</a>
+<a class="box-test" id="6" href="https://github.com/emanuelzone" target="_blank"><i class="fa fa-github"></i><br>Github</a>
+<a class="box-test" id="7" href="#"><i class="fa fa-comment-o"></i><br>Contact</a>
+
+<h3>jQuery</h3>
+<p>CSS övergångar är det bästa sättet att hantera animeringen delen av vår meny. Allt vi använder jQuery för är att animera in och ut menyn via en klickfunktion. I menyn överst på sidan använder jag även en textremsa som visar en textrad som förtydligar vilken knapp man för musen över. Men det har vi inte med i exemplet nedan men följer med när man laddar ner filen.</p>
+<xmp>
+/* Animate */
+// .delay(100) = A delay sequence before the animation starts in .ms
+// .animate = How fast the animation goes
+
+/* Show menu */
+$(document).ready(function(event) {
+  $(".menu").stop().click(function(event) {
+    $(".box1").stop().delay(100).animate({
+      opacity: '1'
+    }, 100);
+
+    $(".box2").delay(200).animate({
+      opacity: '1'
+    }, 200);
+
+    $(".box3").delay(300).animate({
+      opacity: '1',
+    }, 300);
+
+    $(".box4").delay(400).animate({
+      opacity: '1'
+    }, 400);
+
+    $(".box5").delay(500).animate({
+      opacity: '1'
+    }, 500);
+
+    $(".box6").delay(600).animate({
+      opacity: '1'
+    }, 600);
+
+    $(".box7").delay(700).animate({
+      opacity: '1'
+    }, 700);
+
+  });
+  console.log('Menu is ready.');
+});
+
+$(document).ready(function() {
+  $(".menu").click(function() {
+    $(".boxes").stop().toggle(200);
+  });
+});
+
+/* Hide*/
+
+$(document).ready(function() {
+  $(".menu-hide").click(function() {
+    $(".boxes").stop().toggle(800);
+  });
+});
+
+$(document).ready(function() {
+  $(".menu-hide").stop().click(function() {
+    $(".box1").stop().animate({
+      opacity: '0'
+    }, 800);
+
+    $(".box2").stop().animate({
+      opacity: '0'
+    }, 700);
+
+    $(".box3").stop().animate({
+      opacity: '0'
+    }, 600);
+
+    $(".box4").stop().animate({
+      opacity: '0'
+    }, 500);
+
+    $(".box5").stop().animate({
+      opacity: '0'
+    }, 400);
+
+    $(".box6").stop().animate({
+      opacity: '0'
+    }, 300);
+
+    $(".box7").stop().animate({
+      opacity: '0'
+    }, 200);
+
+  });
+});
+
+$(".menu-hide").click(function() {
+  $(".menu-hide").hide();
+  $(".menu").stop().show();
+  $(".menu-hide").stop();
+
+});
+
+$(".menu").click(function() {
+  $(".menu").hide();
+  $(".menu-hide").show();
+  $(".menu-hide").stop();
+});
+
+</xmp>
+
+<h3>Avslutning</h3>
+<p>Mer än så är det inte. klicka på demot nedan för att testa menyn..</p>
+
+<h3>Demo</h3>
+<p>Klicka på menyn nedan för att få fram navigeringen..</p>
+
+<div class="row intro-menu">
+<div class="col-md-12"><a class="menu" href="#menu"><i class="fa fa-bars"></i> Visa menyn</a></div>
+<div class="col-md-12"><a class="menu-hide" href="#menu"><i class="fa fa-close"></i> Dölj menyn</a></div>
+
+<div class="col-md-12 boxes">
+<a class="bmk box1 box" id="1" href="#"><i class="fa fa-home"></i><br>Start</a>
+<a class="bmk box2 box" id="2" href="#"><i class="fa fa-male"></i><br>Who Is?</a>
+<a class="bmk box3 box" id="3" href="#"><i class="fa fa-cubes"></i><br>Skills</a>
+<a class="bmk box4 box" id="4" href="#"><i class="fa fa-download"></i><br>Plugins</a>
+<a class="bmk box5 box" id="5" href="https://jsfiddle.net/user/emanuelzone/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i><br>Jsfiddle</a>
+<a class="bmk box6 box" id="6" href="https://github.com/emanuelzone" target="_blank"><i class="fa fa-github"></i><br>Github</a>
+<a class="bmk box7 box" id="7" href="#"><i class="fa fa-comment-o"></i><br>Contact</a>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-12 spacer"></div>
+
+<h3>Slutsats</h3>
+<p>Att skapa denna animerade meny med CSS3 egenskaper och växla klassen med jQuery är extremt enkel och lägger till en ton av UX upplevelse/användbarehet till din webbdesign som verkligen fångar ögat på besökaren.</p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container space top-content">
+
+
+
+<div class="row">
+<div class="col-md-12">
+<h1>Skillbars</h1>
+<p>Här är en snygg feature som du kan använda på din portfolio sajt där du visar dina skills.</p>
+<p><i class="fa fa-jsfiddle"></i> <a href="https://jsfiddle.net/emanuelzone/rxq8daw7/" target="_blank"> Wiew it on JSFiddle.</a></p>
+</div>
+</div>
+
+
+<div id="skills" class="container skills">
+
+
+<div class="row">
+<div class="col-md-4">
+<h1><i class="fa fa-code"></i></h1>
+<h3>Webdevelopement</h3>
+<p>I use them the best languages for front and backend development.</p>
+
+<p><a class="btn skill-btn-1" href="#webdevelopement">Load skills</a></p>
+
+<p><b>HTML</b></p>
+<div class="skill-frame">
+<div class="html"></div>
+</div>
+
+<p><b>CSS</b></p>
+<div class="skill-frame">
+<div class="css"></div>
+</div>
+
+<p><b>PHP</b></p>
+<div class="skill-frame">
+<div class="php"></div>
+</div>
+
+<p><b>Javascript (Jquery)</b></p>
+<div class="skill-frame">
+<div class="javascript"></div>
+</div>
+
+
+</div>
+
+<div class="col-md-4">
+<h1><i class="fa fa-image"></i></h1>
+<h3>Graphic design</h3>
+<p>For web design and print production, I use Adobe products.</p>
+
+<p><a class="btn skill-btn-2" href="#graphic-design">Load skills</a></p>
+
+<p><b>Illustrator</b></p>
+<div class="skill-frame">
+<div class="illustrator"></div>
+</div>
+
+<p><b>Photoshop</b></p>
+<div class="skill-frame">
+<div class="photoshop"></div>
+</div>
+
+<p><b>Indesign</b></p>
+<div class="skill-frame">
+<div class="indesign"></div>
+</div>
+
+<p><b>Fireworks</b></p>
+<div class="skill-frame">
+<div class="fireworks"></div>
+</div>
+
+</div>
+
+<div class="col-md-4">
+<h1><i class="fa fa-laptop"></i></h1>
+<h3>Management</h3>
+<p>I use them most popular tools for content management and office work.</p>
+
+<p><a class="btn skill-btn-3" href="#management">Load skills</a></p>
+
+<p><b>Dreamweaver</b></p>
+<div class="skill-frame">
+<div class="dreamweaver"></div>
+</div>
+
+<p><b>WordPress</b></p>
+<div class="skill-frame">
+<div class="wordpress"></div>
+</div>
+
+<p><b>Episerver</b></p>
+<div class="skill-frame">
+<div class="episerver"></div>
+</div>
+
+<p><b>Office</b></p>
+<div class="skill-frame">
+<div class="office"></div>
+</div>
+
+</div>
+
+<div class="col-md-12"><p><i class="fa fa-jsfiddle"></i> <a href="https://jsfiddle.net/emanuelzone/rxq8daw7/" target="_blank"> Wiew it on JSFiddle.</a></p></div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 contact">
+
+<h1>Who am i?</h1>
+<p><img class="pull-left img-responsive martin" src="img/martin_circle.png" width="110" alt="Martin">
+I am a guy who is 30+ years old and lives in Varberg. I am a web developer and a web designer and I am passionate about the Web in general. Today I work as a consultant in the IT industry but also offer services through my own company emanuelzone.se. I have extensive experience in creating and developing websites from scratch and I have education in web development at university level.</p>
+<p class="social-media"><a href="mailto:martin@emanuelzone.se"><i class="fa fa-envelope"></i></a> <a href="https://jsfiddle.net/user/emanuelzone/fiddles/" target="_blank"><i class="fa fa-jsfiddle"></i></a> <a href="https://github.com/emanuelzone" target="_blank"><i class="fa fa-github"></i></a> <a href="http://emanuelzone.se" target="_blank"><i class="fa fa-home"></i></a></p>
+
+</div>
+</div>
+</div>
+
+
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/martin.js"></script>
+
+
+
+</body>
+</html>
